@@ -16,6 +16,13 @@ class Bear
     return @empty_stomach
   end
 
-
-  end
+  def eat(river)
+     fish_to_eat = empty_stomach.pop()
+      @empty_stomach << fish_to_eat
+   end
+  #
+   def bear_roars
+     return "Rooooar!"
+   end
+  
 end

@@ -10,7 +10,9 @@ class RiverTest < MiniTest::Test
 
   def setup
 
-
+    @fish1 = Fish.new("tuna")
+    @fish2 = Fish.new("shark")
+    @fish3 = Fish.new("goldfish")
     @fishes= [@fish1, @fish2, @fish3]
     @river = River.new("Amazon")
   end
@@ -20,6 +22,5 @@ class RiverTest < MiniTest::Test
     assert_equal("Amazon", @river.name)
   end
 
-
-
+  
 end
